@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #000000;
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  right: 295px;
+  text-align: right;
+  background: #181c20;
+  color: #8c92a4;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  pointer-events: none;
+  font-family: var(--leva-fonts-mono);
+}
+
+.annotation {
+  transform: translate3d(calc(100px), calc(-50%), 0);
+  text-align: left;
+  background: #0c7118;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  user-select: none;
+  font-family: var(--leva-fonts-mono);
+}
+
+.annotation::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  height: 2px;
+  width: 100px;
+  background: #0c7118;
+}
